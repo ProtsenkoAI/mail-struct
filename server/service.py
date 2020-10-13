@@ -1,3 +1,5 @@
+# TODO: make class to operate conveniently with scopes and pathes
+
 import os.path
 import pickle
 import socket
