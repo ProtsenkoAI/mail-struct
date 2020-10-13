@@ -34,7 +34,8 @@ def build_service(token_creds):
 def check_token_ready():
     if os.path.isfile(default_user_token_path):
         token = load_token()
-        if token.valid:
+        token_refreshable = not token.expired or token.expred and token.refresh_token
+        if token.valid and token_refreshable:
             return True
 
     else:
