@@ -1,2 +1,2 @@
 import server.settings
-from server.service import get_service
+from server.gmail_service import GMailService, get_default_gmail_service

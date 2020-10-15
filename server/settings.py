@@ -5,5 +5,4 @@ default_scopes = ["https://www.googleapis.com/auth/gmail.labels",
 
 data_path = Path.cwd() / "google-cloud-data"
 
-default_service_creds_path = data_path / "credentials.json"
-default_user_token_path = data_path / "token.pickle"
+default_service_files_path = "./google-cloud-data/"
